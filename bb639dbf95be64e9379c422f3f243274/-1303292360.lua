@@ -1,0 +1,139 @@
+local L0_1, L1_1, L2_1
+L0_1 = require
+L1_1 = "Ui.AetherDivide.AetherTeam.AetherDivideTeamEditPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.AetherDivide.AetherTeam.AetherDivideTeamEditPanelBinder"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.AetherDivide.AetherOutFit.AetherSpiritMain.AetherSpiritSelect.AetherSpiritSelectPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.AetherDivide.AetherOutFit.AetherSpiritMain.AetherSpiritSelect.AetherSpiritSelectPanelBinder"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "AetherDivideTeamEditPageBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Quest/AetherDivide/AetherDivideMemberChoosePage.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/BtnBack"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_close = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/PanelContent/FuntionPanel/BtnDetail"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_detail = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/PanelContent/FuntionPanel/BtnConfirm"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_activate = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TabList/KeyMapInfoLeft"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_pre = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TabList/KeyMapInfoRight"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_next = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TopBarArea/AreaPanel/TopBtnList/BtnRuleTip_ResBar_AttributeRestrain"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_tips = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FuntionPanel/BtnConfirm/limitPanel/NumPanel/Total"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_elite_limit = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FuntionPanel/BtnConfirm/limitPanel/NumPanel/Current"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_cur_elite = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FuntionPanel/BtnConfirm/TextPanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_btn_name = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.AetherSpiritSelectPanel
+  L4_2 = G
+  L4_2 = L4_2.AetherSpiritSelectPanelBinder
+  L5_2 = "Root/MemberList/ListPanel"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.panel_spirit_sort = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.AetherDivideTeamEditPanel
+  L4_2 = G
+  L4_2 = L4_2.AetherDivideTeamEditPanelBinder
+  L5_2 = "Root/PanelContent/CurrentTeamEditPanel"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.panel_edit = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/TabList/ScrollView/TabControl"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_tab_control = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "PictureBg/BlockArea"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_tab_root = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

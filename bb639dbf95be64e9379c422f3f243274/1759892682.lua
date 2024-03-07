@@ -1,0 +1,142 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "AvatarHPSettingItemPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1()
+  local L0_2, L1_2
+  L0_2 = "UI/Adventure/Widget/AvaterHpSettingBar.prefab"
+  return L0_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "AvaterHead/AvatarHeadIconSmall/IconAvatar/Image"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.icon = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "BtnLock"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.lock_btn = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Slider
+  L4_2 = "ExchangePanel/Slider/Line"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.slider = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "HealthPercent"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.num_text = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "BtnLock/LockPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.lock_icon = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "BtnLock/UnLockPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.unlock_icon = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animator
+  L4_2 = "BtnLock"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.animator = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "ExchangePanel/ButtonLeft/KeyMapInfo"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_left_in_control_tip = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "ExchangePanel/ButtonRight/KeyMapInfo"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_right_in_control_tip = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "ExchangePanel/ButtonLeft"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_left = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "ExchangePanel/ButtonRight"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_right = L1_2
+  L1_2 = A0_2.node_left_in_control_tip
+  L2_2 = L1_2
+  L1_2 = L1_2.SafeSetActive
+  L3_2 = false
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.node_right_in_control_tip
+  L2_2 = L1_2
+  L1_2 = L1_2.SafeSetActive
+  L3_2 = false
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.btn_left
+  L2_2 = L1_2
+  L1_2 = L1_2.SafeSetActive
+  L3_2 = false
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.btn_right
+  L2_2 = L1_2
+  L1_2 = L1_2.SafeSetActive
+  L3_2 = false
+  L1_2(L2_2, L3_2)
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Transform
+  L4_2 = "AvaterHead/AvatarHeadIconSmall/TrialMark"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.node_trial_mark = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.LocalizedText
+  L4_2 = "AvaterHead/AvatarHeadIconSmall/TrialMark/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_trial_mark = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "AvaterHead/AvatarHeadIconSmall/StoryTrialMark"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_story_trial_mark = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

@@ -1,0 +1,65 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "RogueNousStoryNousPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "TxtValueLeft"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.min_nous_value = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "TxtValueRight"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.max_nous_value = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.CanvasGroup
+  L4_2 = ""
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.root_canvas = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "Icon"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.icon_img = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "FrameBg/Frame1"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.circle_img = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "FrameBg/Arrow"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.arrow_img = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

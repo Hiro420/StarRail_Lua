@@ -1,0 +1,114 @@
+local L0_1, L1_1, L2_1, L3_1
+L0_1 = require
+L1_1 = "Ui.ActivityFeverTime.ActivityFeverTimeRankPanelBinder"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "ActivityFeverTimeRankPanel"
+L2_1 = G
+L2_1 = L2_1.BasePanel
+L0_1 = L0_1(L1_1, L2_1)
+L1_1 = {}
+L2_1 = CS
+L2_1 = L2_1.RPG
+L2_1 = L2_1.GameCore
+L2_1 = L2_1.ActivityRank
+L2_1 = L2_1.C
+L2_1 = #L2_1
+L1_1[L2_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/CommonRankBg_C.png"
+L2_1 = CS
+L2_1 = L2_1.RPG
+L2_1 = L2_1.GameCore
+L2_1 = L2_1.ActivityRank
+L2_1 = L2_1.B
+L2_1 = #L2_1
+L1_1[L2_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/CommonRankBg_B.png"
+L2_1 = CS
+L2_1 = L2_1.RPG
+L2_1 = L2_1.GameCore
+L2_1 = L2_1.ActivityRank
+L2_1 = L2_1.A
+L2_1 = #L2_1
+L1_1[L2_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/CommonRankBg_A.png"
+L2_1 = CS
+L2_1 = L2_1.RPG
+L2_1 = L2_1.GameCore
+L2_1 = L2_1.ActivityRank
+L2_1 = L2_1.S
+L2_1 = #L2_1
+L1_1[L2_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/CommonRankBg_S.png"
+L2_1 = CS
+L2_1 = L2_1.RPG
+L2_1 = L2_1.GameCore
+L2_1 = L2_1.ActivityRank
+L2_1 = L2_1.SS
+L2_1 = #L2_1
+L1_1[L2_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/CommonRankBg_SS.png"
+L2_1 = {}
+L3_1 = CS
+L3_1 = L3_1.RPG
+L3_1 = L3_1.GameCore
+L3_1 = L3_1.ActivityRank
+L3_1 = L3_1.C
+L3_1 = #L3_1
+L2_1[L3_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/ImgRank_C.png"
+L3_1 = CS
+L3_1 = L3_1.RPG
+L3_1 = L3_1.GameCore
+L3_1 = L3_1.ActivityRank
+L3_1 = L3_1.B
+L3_1 = #L3_1
+L2_1[L3_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/ImgRank_B.png"
+L3_1 = CS
+L3_1 = L3_1.RPG
+L3_1 = L3_1.GameCore
+L3_1 = L3_1.ActivityRank
+L3_1 = L3_1.A
+L3_1 = #L3_1
+L2_1[L3_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/ImgRank_A.png"
+L3_1 = CS
+L3_1 = L3_1.RPG
+L3_1 = L3_1.GameCore
+L3_1 = L3_1.ActivityRank
+L3_1 = L3_1.S
+L3_1 = #L3_1
+L2_1[L3_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/ImgRank_S.png"
+L3_1 = CS
+L3_1 = L3_1.RPG
+L3_1 = L3_1.GameCore
+L3_1 = L3_1.ActivityRank
+L3_1 = L3_1.SS
+L3_1 = #L3_1
+L2_1[L3_1] = "SpriteOutput/UI/Quest/FeverTime/RankIcon/ImgRank_SS.png"
+function L3_1(A0_2)
+  local L1_2
+end
+L0_1._on_load = L3_1
+function L3_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2._binder
+  L2_2 = L2_2.text_rank
+  L2_2.enabled = false
+  L2_2 = A0_2._binder
+  L2_2 = L2_2.image_rank
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeSetActive
+  L4_2 = true
+  L2_2(L3_2, L4_2)
+  L3_2 = A0_2
+  L2_2 = A0_2._load_sprite_to
+  L4_2 = A0_2._binder
+  L4_2 = L4_2.image_bg
+  L5_2 = #A1_2
+  L5_2 = L1_1[L5_2]
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2._load_sprite_to
+  L4_2 = A0_2._binder
+  L4_2 = L4_2.image_rank
+  L5_2 = #A1_2
+  L5_2 = L2_1[L5_2]
+  L2_2(L3_2, L4_2, L5_2)
+end
+L0_1.setup_view = L3_1
+return L0_1

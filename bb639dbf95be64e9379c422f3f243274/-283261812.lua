@@ -1,0 +1,161 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "BoxingClubMissionPageBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+L1_1 = 5
+function L2_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Quest/FistClub/QuestFistClubMissionPage.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L2_1
+function L2_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._bind_monster
+  L1_2(L2_2)
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Content/BoxStory/BtnBattle"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_confirm = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/BtnClose"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_exit = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame/InfoPanel/BoxRound/BoxNameLeft/TxtName"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_player_name = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Content/BoxStory/BoxRankLeft/TxtName"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_player_rank = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame/LeftPanel/Root/Avatar"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.image_player = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame/LeftPanel/Root/FistClubAvatarTalkItem/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_player_bubble = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/FistClubReadyPanel/Frame/LeftPanel/Root/FistClubAvatarTalkItem"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_player_bubble = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame/InfoPanel/BoxRound/BoxNameRight/TxtName"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_monster_name = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Content/BoxStory/BoxRankRight/TxtName"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_monster_rank = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame/RightPanel/Root/AvatarPanel/Avatar1"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.image_monster = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame/RightPanel/FistClubAvatarTalkItem/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_monster_bubble = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/FistClubReadyPanel/Frame/RightPanel/FistClubAvatarTalkItem"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_monster_bubble = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animation
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.ani_talk = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/FistClubReadyPanel/Frame/InfoPanel/BoxRound/Bg/Image/Text_A/TxtValue"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.num_round = L1_2
+end
+L0_1._on_bind = L2_1
+function L2_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = {}
+  A0_2.node_monster = L1_2
+  L1_2 = 1
+  L2_2 = L1_1
+  L3_2 = 1
+  for L4_2 = L1_2, L2_2, L3_2 do
+    L6_2 = A0_2
+    L5_2 = A0_2._safe_find
+    L7_2 = "Root/PanelContent/FistClubReadyPanel/Content/BoxStory/BoxMonsterContent/BoxMonster/FistClubStoryRowItem"
+    L8_2 = L4_2
+    L7_2 = L7_2 .. L8_2
+    L5_2 = L5_2(L6_2, L7_2)
+    L6_2 = table
+    L6_2 = L6_2.insert
+    L7_2 = A0_2.node_monster
+    L8_2 = L5_2
+    L6_2(L7_2, L8_2)
+  end
+end
+L0_1._bind_monster = L2_1
+return L0_1

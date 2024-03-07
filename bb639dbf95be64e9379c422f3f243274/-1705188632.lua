@@ -1,0 +1,73 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "MuseumRandomEventStaffPanel"
+L2_1 = G
+L2_1 = L2_1.BasePanel
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = CS
+  L2_2 = L2_2.RPG
+  L2_2 = L2_2.GameCore
+  L2_2 = L2_2.ItemRarityConfigExcelTable
+  L2_2 = L2_2.GetData
+  L3_2 = A1_2.ItemRow
+  L3_2 = L3_2.Rarity
+  L2_2 = L2_2(L3_2)
+  A0_2._rarity_row = L2_2
+  L2_2 = A0_2._binder
+  L2_2 = L2_2.img_rarity_line
+  L3_2 = G
+  L3_2 = L3_2.UIColorUtils
+  L3_2 = L3_2.GetColor
+  L4_2 = A0_2._rarity_row
+  L4_2 = L4_2.FrameItemRarityColor
+  L3_2 = L3_2(L4_2)
+  L2_2.color = L3_2
+  L3_2 = A0_2
+  L2_2 = A0_2._async_load_sprite_to
+  L4_2 = A0_2._binder
+  L4_2 = L4_2.img_staff
+  L5_2 = A1_2.ItemRow
+  L5_2 = L5_2.ItemFigureIconPath
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = A0_2._binder
+  L2_2 = L2_2.stat_a_panel
+  L3_2 = L2_2
+  L2_2 = L2_2.setup_view
+  L4_2 = A1_2.StaffRow
+  L4_2 = L4_2.StatsA
+  L5_2 = CS
+  L5_2 = L5_2.RPG
+  L5_2 = L5_2.GameCore
+  L5_2 = L5_2.StuffStats
+  L5_2 = L5_2.StatsA
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = A0_2._binder
+  L2_2 = L2_2.stat_b_panel
+  L3_2 = L2_2
+  L2_2 = L2_2.setup_view
+  L4_2 = A1_2.StaffRow
+  L4_2 = L4_2.StatsB
+  L5_2 = CS
+  L5_2 = L5_2.RPG
+  L5_2 = L5_2.GameCore
+  L5_2 = L5_2.StuffStats
+  L5_2 = L5_2.StatsB
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = A0_2._binder
+  L2_2 = L2_2.stat_c_panel
+  L3_2 = L2_2
+  L2_2 = L2_2.setup_view
+  L4_2 = A1_2.StaffRow
+  L4_2 = L4_2.StatsC
+  L5_2 = CS
+  L5_2 = L5_2.RPG
+  L5_2 = L5_2.GameCore
+  L5_2 = L5_2.StuffStats
+  L5_2 = L5_2.StatsC
+  L2_2(L3_2, L4_2, L5_2)
+end
+L0_1.setup_view = L1_1
+return L0_1

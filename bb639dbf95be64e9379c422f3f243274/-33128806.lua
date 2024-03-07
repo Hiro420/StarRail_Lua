@@ -1,0 +1,114 @@
+local L0_1, L1_1, L2_1
+L0_1 = require
+L1_1 = "Ui.Component.NodeListView"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Component.NodeListViewBinder"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.BoxingClub.Components.BoxingClubResonanceEnemyListPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.BoxingClub.Components.BoxingClubEnemyInfoPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.BoxingClub.Components.BoxingClubEnemyInfoPanelBinder"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "BoxingClubResonanceEnemyPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Content/BoxSimple/RightPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.info_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.BoxingClubResonanceEnemyListPanel
+  L4_2 = G
+  L4_2 = L4_2.BoxingClubResonanceEnemyListPanelBinder
+  L5_2 = "Content/BoxSimple/RightPanel/Root/BoxInfo/BoxMatch"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.enemy_list_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Frame/InfoPanel/BoxRound/BoxNameRight"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.enemy_name_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Frame/InfoPanel/BoxRound/BoxNameRight/TxtName"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.enemy_name_txt = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Frame/InfoPanel/BoxRound/BoxNameRight/BtnView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.show_enemy_detail_button = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Content/BoxSimple/RightPanel/Root/BtnRandom"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Content/BoxSimple/RightPanel/Root/BtnRandom/TextPanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_desc = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.BoxingClubEnemyInfoPanel
+  L4_2 = G
+  L4_2 = L4_2.BoxingClubEnemyInfoPanelBinder
+  L5_2 = "Frame/RightPanel/Root"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.enemy_display_info_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Frame/RightPanel/FistClubAvatarTalkItem"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.enemy_talk_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Frame/RightPanel/FistClubAvatarTalkItem/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.enemy_talk_desc = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Content/BoxSimple/RightPanel/Root/BoxInfo/BoxMatch/TextPanel/TotalNum"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_monster_wave = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1
