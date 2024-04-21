@@ -1,0 +1,137 @@
+local L0_1, L1_1, L2_1
+L0_1 = require
+L1_1 = "Ui.Common.CommonRefreshBtnPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Common.CommonRefreshBtnPanelBinder"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.AetherDivide.AetherChallenge.Panels.AetherChallengeForcePanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.AetherDivide.AetherChallenge.Panels.AetherChallengeForcePanelBinder"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "AetherChallengeInfiniteTabItemBinder"
+L2_1 = G
+L2_1 = L2_1.TabItemBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "BossChallengeItem/Root/StatePanel/BtnChallenge"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_challenge = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "BossChallengeItem/Root/IconPanel/Icon/Img"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.img_avatar = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animation
+  L4_2 = "BossChallengeItem"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.anim_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "BossChallengeItem/Root/NamePanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_name = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "BossChallengeItem/Root/NamePanel/EnvironmentPanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_buff_desc = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.CommonRefreshBtnPanel
+  L4_2 = G
+  L4_2 = L4_2.CommonRefreshBtnPanelBinder
+  L5_2 = "BossChallengeItem/Root/StatePanel/BtnChange"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.panel_refresh_btn = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.AetherChallengeForcePanel
+  L4_2 = G
+  L4_2 = L4_2.AetherChallengeForcePanelBinder
+  L5_2 = "BossChallengeItem/Root/NPCForceList"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.panel_force = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.StaticListView
+  L4_2 = "BossChallengeItem/Root/ChallengeMonsterPanel/ScrollViewMask/ScrollView/Viewport/Content/StaticListView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.monster_list = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = ""
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "BossChallengeItem/Root/NamePanel/EnvironmentPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_buff_desc = L1_2
+end
+L0_1._on_bind = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt_in_btn
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "TextPanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_title = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt_in_btn
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "IconPanel/Icon"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.icon_normal = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find_in_btn
+  L3_2 = "IconPanel/LockPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_lock = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find_in_btn
+  L3_2 = "IconPanel/RedDot"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_reddot = L1_2
+end
+L0_1._on_tab_btn_bind = L1_1
+return L0_1

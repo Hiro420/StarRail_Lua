@@ -1,0 +1,127 @@
+local L0_1, L1_1, L2_1
+L0_1 = require
+L1_1 = "Ui.Common.RewardItemIconLite"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Common.RewardItemIconLiteBinder"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "ExpeditionResultItemPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Assignment/Widget/SingleResultInfoRow.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = ""
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Content/TitlePanel/TitleText"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_name = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Content/TimeCost/Hour"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_hour = L1_2
+  L1_2 = {}
+  L3_2 = A0_2
+  L2_2 = A0_2._safe_find
+  L4_2 = "Content/AvatarHead/AvatarHead1"
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = A0_2
+  L3_2 = A0_2._safe_find
+  L5_2 = "Content/AvatarHead/AvatarHead2"
+  L3_2, L4_2, L5_2, L6_2 = L3_2(L4_2, L5_2)
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L1_2[4] = L5_2
+  L1_2[5] = L6_2
+  A0_2.nodes_avatar = L1_2
+  L1_2 = {}
+  L3_2 = A0_2
+  L2_2 = A0_2._safe_get_cmpt
+  L4_2 = CS
+  L4_2 = L4_2.UnityEngine
+  L4_2 = L4_2.UI
+  L4_2 = L4_2.Image
+  L5_2 = "Content/AvatarHead/AvatarHead1/Selected/IconAvatar/Image"
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  L4_2 = A0_2
+  L3_2 = A0_2._safe_get_cmpt
+  L5_2 = CS
+  L5_2 = L5_2.UnityEngine
+  L5_2 = L5_2.UI
+  L5_2 = L5_2.Image
+  L6_2 = "Content/AvatarHead/AvatarHead2/Selected/IconAvatar/Image"
+  L3_2, L4_2, L5_2, L6_2 = L3_2(L4_2, L5_2, L6_2)
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L1_2[4] = L5_2
+  L1_2[5] = L6_2
+  A0_2.imgs_avatar = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.StaticListView
+  L4_2 = "Content/RewardList/Viewport/Content/BaseReward"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.list_normal = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.StaticListView
+  L4_2 = "Content/RewardList/Viewport/Content/ExtraReward"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.list_extra = L1_2
+  L1_2 = {}
+  L3_2 = A0_2
+  L2_2 = A0_2._safe_find
+  L4_2 = "Content/RewardList/Viewport/Content/ExtraReward"
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = A0_2
+  L3_2 = A0_2._safe_find
+  L5_2 = "Content/RewardList/Viewport/Content/PartLine"
+  L3_2, L4_2, L5_2, L6_2 = L3_2(L4_2, L5_2)
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L1_2[4] = L5_2
+  L1_2[5] = L6_2
+  A0_2.nodes_extra = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Content/KeyMapZoom"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_controller_hint = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

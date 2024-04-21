@@ -1,0 +1,230 @@
+local L0_1, L1_1, L2_1
+L0_1 = require
+L1_1 = "Ui.Component.NodeListView"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Component.NodeListViewBinder"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.FarmEnemy.PreviewMonsterPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.FarmEnemy.PreviewMonsterPanelBinder"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Rogue.Avatar.Panels.RogueAvatarIconPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Rogue.Avatar.Panels.RogueAvatarIconPanelBinder"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Team.TeamMemberMultiListMultiSelectPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Battle.ActivityEvolveBuild.BattleProgress.BattleEvolveBuildBattleProgressPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Activity.EvolveBuild.EvolveBuildPreviewMonsterPanelBinder"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Activity.EvolveBuild.EvolveBuildGearDetailPanel"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "EvolveBuildStagePageBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+L1_1 = require
+L2_1 = "Generate.EvolveBuildDetailPageIndex"
+L1_1 = L1_1(L2_1)
+function L2_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Quest/EvolveBuild/EvolveBuildDetailPage.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L2_1
+function L2_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L2_2 = A0_2
+  L1_2 = A0_2.auto_bind
+  L3_2 = L1_1
+  L1_2 = L1_2(L2_2, L3_2)
+  if not L1_2 then
+    L1_2 = G
+    L1_2 = L1_2.SuperDebug
+    L1_2 = L1_2.LogError
+    L2_2 = G
+    L2_2 = L2_2.LogTag
+    L2_2 = L2_2.UI
+    L3_2 = "[EvolveBuild] EvolveBuildStagePage: auto_bind Failed."
+    L1_2(L2_2, L3_2)
+  end
+  L1_2 = {}
+  L3_2 = A0_2
+  L2_2 = A0_2._create_panel_with_root_trans
+  L4_2 = G
+  L4_2 = L4_2.RogueAvatarIconPanel
+  L5_2 = G
+  L5_2 = L5_2.RogueAvatarIconPanelBinder
+  L6_2 = A0_2.team_member1
+  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
+  L4_2 = A0_2
+  L3_2 = A0_2._create_panel_with_root_trans
+  L5_2 = G
+  L5_2 = L5_2.RogueAvatarIconPanel
+  L6_2 = G
+  L6_2 = L6_2.RogueAvatarIconPanelBinder
+  L7_2 = A0_2.team_member2
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2._create_panel_with_root_trans
+  L6_2 = G
+  L6_2 = L6_2.RogueAvatarIconPanel
+  L7_2 = G
+  L7_2 = L7_2.RogueAvatarIconPanelBinder
+  L8_2 = A0_2.team_member3
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L6_2 = A0_2
+  L5_2 = A0_2._create_panel_with_root_trans
+  L7_2 = G
+  L7_2 = L7_2.RogueAvatarIconPanel
+  L8_2 = G
+  L8_2 = L8_2.RogueAvatarIconPanelBinder
+  L9_2 = A0_2.team_member4
+  L5_2, L6_2, L7_2, L8_2, L9_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L1_2[4] = L5_2
+  L1_2[5] = L6_2
+  L1_2[6] = L7_2
+  L1_2[7] = L8_2
+  L1_2[8] = L9_2
+  A0_2.team_members = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel_with_root_trans
+  L3_2 = G
+  L3_2 = L3_2.TeamMemberMultiListMultiSelectPanel
+  L4_2 = G
+  L4_2 = L4_2.TeamMemberMultiListMultiSelectPanelBinder
+  L5_2 = A0_2.avatar_select_panel
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.avatar_select_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel_with_root_trans
+  L3_2 = G
+  L3_2 = L3_2.PreviewMonsterPanel
+  L4_2 = G
+  L4_2 = L4_2.EvolveBuildPreviewMonsterPanelBinder
+  L5_2 = A0_2.monster_preview_panel
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.monster_preview_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/Content/InfoPanel/ScrollView/Viewport/Content/ExpectTargetPanel/BossPanel/TitlePanel/KeyMapInfoPanel/KeyMapInfo/GamepadBtn"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.monster_preview_btn = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel_with_root_trans
+  L3_2 = G
+  L3_2 = L3_2.BattleEvolveBuildBattleProgressPanel
+  L4_2 = G
+  L4_2 = L4_2.BattleEvolveBuildBattleProgressPanelBinder
+  L5_2 = A0_2.progress_panel
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.progress_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel_with_root_trans
+  L3_2 = G
+  L3_2 = L3_2.EvolveBuildGearDetailPanel
+  L4_2 = G
+  L4_2 = L4_2.EvolveBuildGearDetailPanelBinder
+  L5_2 = A0_2.gear_recommend_detail_panel
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.gear_recommend_detail_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel_with_root_trans
+  L3_2 = G
+  L3_2 = L3_2.NodeListView
+  L4_2 = G
+  L4_2 = L4_2.NodeListViewBinder
+  L5_2 = A0_2.weapon_tag_list
+  L6_2 = "Ui.Battle.ActivityEvolveBuild.Select.BattleEvolveBuildSelectGearTagPanel"
+  L7_2 = "Ui.Battle.ActivityEvolveBuild.Select.BattleEvolveBuildSelectGearTagPanelBinder"
+  L8_2 = false
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  A0_2.weapon_tag_list = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel_with_root_trans
+  L3_2 = G
+  L3_2 = L3_2.NodeListView
+  L4_2 = G
+  L4_2 = L4_2.NodeListViewBinder
+  L5_2 = A0_2.weapon_element_list
+  L6_2 = "Ui.Monster.MonsterDamageTypePanel"
+  L7_2 = "Ui.Monster.MonsterDamageTypePanelBinder"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  A0_2.weapon_element_list = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.MonoInControlMove
+  L4_2 = "Root/Content/EvolvePropsInfoPanel/Content/BuffDetailPanel/ScrolView/Viewport/Content"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.mono_move_left = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.MonoInControlMove
+  L4_2 = "Root/Content/InfoPanel/ScrollView/Viewport/Content"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.mono_move_right = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/Content/EvolvePropsInfoPanel/Content/GameObject"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.move_left_key_map_info = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.ScrollRect
+  L4_2 = "Root/Content/EvolvePropsInfoPanel/Content/BuffDetailPanel/ScrolView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.move_left_scroll_rect = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/Content/EvolvePropsInfoPanel/Content/BuffDetailPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.move_left_layout = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/Content/EvolvePropsInfoPanel/LowPanel/BtnChangeWeapon/RedDot/PopUpRedDot"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.weapon_empty_red_dot = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/Content/CommonBtnList/BtnStart/WarningTip"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.enter_battle_btn_weapon_empty_tip = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animation
+  L4_2 = "Root/Content/InfoPanel/ScrollView/Viewport/Content/ExpectTargetPanel/BossPanel/BossPanel/Contents/ScrollViewMask/RefreshEff"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.rerandom_anim = L1_2
+end
+L0_1._on_bind = L2_1
+return L0_1

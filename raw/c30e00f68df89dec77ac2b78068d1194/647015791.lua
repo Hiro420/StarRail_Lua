@@ -1,0 +1,10 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.NormalColor = "#605745FF"
+L0_1.FinishColor = "#DD7A00FF"
+TagRequestColor = L0_1
+L0_1 = {}
+L0_1.NormalColor = "#F1ECE0FF"
+L0_1.FinishColor = "#FFCF70FF"
+L0_1.ErrorColor = "#F1ECE099"
+FormulaRequestColor = L0_1

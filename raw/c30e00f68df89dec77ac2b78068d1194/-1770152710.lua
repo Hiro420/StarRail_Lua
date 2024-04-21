@@ -1,0 +1,94 @@
+local L0_1, L1_1, L2_1
+L0_1 = require
+L1_1 = "Ui.Archive.AvatarArchive.AvatarArchiveStoryItemPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Archive.AvatarArchive.AvatarArchiveStoryItemPanelBinder"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "AvatarArchiveStoryContentPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "StoryTitle/TextPanel/Title"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_title = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "StoryPanel/ScrollViewMask/ScrollView/Viewport/Content/StoryTextContent"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_content = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "StoryPanel/EmptyStatusTip/Title"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_unlock_desc = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "StoryPanel/EmptyStatusTip"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_empty = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "StoryPanel/ScrollViewMask"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_content = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "StoryPanel/ScrollViewMask/ScrollView/Viewport/Content"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_text_content = L1_2
+  L1_2 = {}
+  A0_2.story_panel_list = L1_2
+  L1_2 = 1
+  L2_2 = 5
+  L3_2 = 1
+  for L4_2 = L1_2, L2_2, L3_2 do
+    L5_2 = "InsideStoryStaticList/InsideStoryItem"
+    L6_2 = tostring
+    L7_2 = L4_2
+    L6_2 = L6_2(L7_2)
+    L5_2 = L5_2 .. L6_2
+    L7_2 = A0_2
+    L6_2 = A0_2._create_panel
+    L8_2 = G
+    L8_2 = L8_2.AvatarArchiveStoryItemPanel
+    L9_2 = G
+    L9_2 = L9_2.AvatarArchiveStoryItemPanelBinder
+    L10_2 = L5_2
+    L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2)
+    L7_2 = A0_2.story_panel_list
+    L8_2 = A0_2.story_panel_list
+    L8_2 = #L8_2
+    L8_2 = L8_2 + 1
+    L7_2[L8_2] = L6_2
+  end
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.ScrollRect
+  L4_2 = "StoryPanel/ScrollViewMask/ScrollView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.scroll_rect = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

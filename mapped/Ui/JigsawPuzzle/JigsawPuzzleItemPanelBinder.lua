@@ -1,0 +1,102 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "JigsawPuzzleItemPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Puzzle/Widget/BtnPuzzle.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = ""
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/Frame/Puzzle"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_3d_parent = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.JigsawEventTriggerListener
+  L4_2 = ""
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.event_trigger_listener = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.RectTransform
+  L4_2 = ""
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.rect_transform_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.Prop
+  L3_2 = L3_2.JigsawPuzzleItem
+  L4_2 = "Root/Frame/Puzzle/JigsawItem_UI"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.jigsaw_puzzle_item = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.MeshRenderer
+  L4_2 = "Root/Frame/Puzzle/JigsawItem_UI"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.mesh_render = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.MeshRenderer
+  L4_2 = "Root/Frame/Puzzle/JigsawItem_UI/Outline"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.mesh_render_outline = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/Frame/Puzzle/JigsawItem_UI/Outline"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_outline = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.UI3DClippable
+  L4_2 = "Root/Frame/Puzzle/JigsawItem_UI"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.ui3d_clippable = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animator
+  L4_2 = ""
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.animator_button = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/ClickArea"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_clickarea = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

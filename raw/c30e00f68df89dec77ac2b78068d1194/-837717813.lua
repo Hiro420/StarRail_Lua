@@ -1,0 +1,62 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "HeliobusPopulationPhaseDetailPageNumPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page1/Selected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_1_selected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page2/Selected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_2_selected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page3/Selected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_3_selected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page4/Selected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_4_selected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page5/Selected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_5_selected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page1/Unselected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_1_unselected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page2/Unselected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_2_unselected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page3/Unselected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_3_unselected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page4/Unselected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_4_unselected = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Page5/Unselected"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_page_5_unselected = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

@@ -1,0 +1,132 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "AetherDivideTerminalChallengeTabItemBinder"
+L2_1 = G
+L2_1 = L2_1.TabItemBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Quest/AetherDivide/Widget/AetherDivideTerminalChallengePanel.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "BottomTabArea/KeyMapInfo/Root/CopyLayout/Left/GamepadBtn"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_pre = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "BottomTabArea/KeyMapInfo/Root/CopyLayout/Right/GamepadBtn"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_next = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Content/EmptyPanel/EmptyStatePanel/TextPanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_infinite_unlock_hint = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Content/NPCChallengeListLock/LockedTipsPanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_unlock_hint = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.SuperScrollView
+  L3_2 = L3_2.LoopListView2
+  L4_2 = "Content/NPCChallengeListPanel/ScrollView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.challenge_list = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.ScrollRect
+  L4_2 = "Content/NPCChallengeListPanel/ScrollView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.scroll_rect = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animation
+  L4_2 = "Content/NPCChallengeListLock"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.anim_lock_line = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "BottomTabArea/TopControl/TabControl"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_tab_control = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Content/NPCChallengeListPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_tank_tab_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Content/BossChallengePanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_infinite_tab_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Content/EmptyPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_empty = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Content/NPCChallengeListLock"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_lock_hint = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Content/NPCChallengeListPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_challenge_list = L1_2
+end
+L0_1._on_bind = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt_in_btn
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "TextPanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_title = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find_in_btn
+  L3_2 = "LockPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_lock = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find_in_btn
+  L3_2 = "RedDot"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_reddot = L1_2
+end
+L0_1._on_tab_btn_bind = L1_1
+return L0_1

@@ -1,0 +1,104 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "ActivityMonsterResearchSubmitPageBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Quest/PocketMonster/SubjectInfoPage.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/BtnClose/Btn"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_close = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/PanelContent/RightPanelBlurRoot/MaterialSubmitPanel/MaterialList/BtnPanel/BtnSubmit"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_submit = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/PanelContent/BtnMonsterBook"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_open_book = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/BtnMonsterBook/TextPanel/Root/TitleText"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_btn_submit = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/RightPanelBlurRoot/OptionalSubjectPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_select_question_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/RightPanelBlurRoot/MaterialSubmitPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_submit_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/RightPanelBlurRoot/MaterialSubmitPanel/NamePanel/NameText"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_title = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/RightPanelBlurRoot/MaterialSubmitPanel/SubjectInfoPanel/DescribePanel/TextMask/ScrollView/Viewport/Content/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.txt_question = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "Root/PanelContent/RightPanelBlurRoot/MaterialSubmitPanel/SubjectInfoPanel/DescribePanel/TextMask/AvatarPhoto/Avatar/Img"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.img_monster = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.SuperScrollView
+  L3_2 = L3_2.LoopListView2
+  L4_2 = "Root/PanelContent/RightPanelBlurRoot/MaterialSubmitPanel/SubjectInfoPanel/RewardPanel/ScrollView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.scroll_view_reward = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/RightPanelBlurRoot/MaterialSubmitPanel/MaterialList/Reward"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_material_list = L1_2
+end
+L0_1._on_bind = L1_1
+return L0_1

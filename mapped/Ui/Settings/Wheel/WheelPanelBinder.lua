@@ -1,0 +1,191 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "WheelPanelBinder"
+L2_1 = G
+L2_1 = L2_1.TabItemBinder
+L0_1 = L0_1(L1_1, L2_1)
+L1_1 = G
+L1_1 = L1_1.ComponentExtensions
+L2_1 = 8
+L3_1 = 4
+function L4_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "PageInfo/TitleType/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_panel_hint = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/TopTab/TabControl"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_tab_btns_root = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/TopTab/TabControl/WheelTabItem8"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_eight_wheel_tab_item = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/TopTab/TabControl/WheelTabItem4"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_four_wheel_tab_item = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel8Section"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_eight_wheel_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel4Section"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_four_wheel_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.SuperScrollView
+  L3_2 = L3_2.LoopGridView
+  L4_2 = "Contents/ShortCutWheelPanel/LeftPanel/ScrollView"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.scroll_view = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel4Section/DetailInfoPanel/KeyMapInfo/ImgKey"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_four_wheel_game_pad_tip = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel4Section/DetailInfoPanel/KeyMapInfo/ImgMouse"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_four_wheel_mouse_tip = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel8Section/DetailInfoPanel/KeyMapInfo/ImgKey"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_eight_wheel_game_pad_tip = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel8Section/DetailInfoPanel/KeyMapInfo/ImgMouse"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_eight_wheel_mouse_tip = L1_2
+  L1_2 = {}
+  A0_2._eight_wheel_short_cut_item_list = L1_2
+  L1_2 = 1
+  while true do
+    L2_2 = L2_1
+    if not (L1_2 <= L2_2) then
+      break
+    end
+    L3_2 = A0_2
+    L2_2 = A0_2._safe_find
+    L4_2 = string
+    L4_2 = L4_2.format
+    L5_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel8Section/AppIconList/ShortCut0%d/ShortCutIconItem"
+    L6_2 = L1_2
+    L4_2, L5_2, L6_2 = L4_2(L5_2, L6_2)
+    L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
+    L3_2 = table
+    L3_2 = L3_2.insert
+    L4_2 = A0_2._eight_wheel_short_cut_item_list
+    L5_2 = L2_2
+    L3_2(L4_2, L5_2)
+    L1_2 = L1_2 + 1
+  end
+  L2_2 = {}
+  A0_2._four_wheel_short_cut_item_list = L2_2
+  L1_2 = 1
+  while true do
+    L2_2 = L3_1
+    if not (L1_2 <= L2_2) then
+      break
+    end
+    L3_2 = A0_2
+    L2_2 = A0_2._safe_find
+    L4_2 = string
+    L4_2 = L4_2.format
+    L5_2 = "Contents/ShortCutWheelPanel/RightPanel/ShortCutWheel/Wheel4Section/AppIconList/ShortCut0%d/ShortCutIconItem"
+    L6_2 = L1_2
+    L4_2, L5_2, L6_2 = L4_2(L5_2, L6_2)
+    L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
+    L3_2 = table
+    L3_2 = L3_2.insert
+    L4_2 = A0_2._four_wheel_short_cut_item_list
+    L5_2 = L2_2
+    L3_2(L4_2, L5_2)
+    L1_2 = L1_2 + 1
+  end
+  L3_2 = A0_2
+  L2_2 = A0_2._safe_get_cmpt
+  L4_2 = CS
+  L4_2 = L4_2.UnityEngine
+  L4_2 = L4_2.UI
+  L4_2 = L4_2.Button
+  L5_2 = "Contents/ShortCutWheelPanel/RightPanel/TopTab/KeyMapInfo_Left/GamepadBtn"
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  A0_2.btn_select_left = L2_2
+  L3_2 = A0_2
+  L2_2 = A0_2._safe_get_cmpt
+  L4_2 = CS
+  L4_2 = L4_2.UnityEngine
+  L4_2 = L4_2.UI
+  L4_2 = L4_2.Button
+  L5_2 = "Contents/ShortCutWheelPanel/RightPanel/TopTab/KeyMapInfo_Right/GamepadBtn"
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  A0_2.btn_select_right = L2_2
+  L3_2 = A0_2
+  L2_2 = A0_2._safe_get_cmpt
+  L4_2 = CS
+  L4_2 = L4_2.UnityEngine
+  L4_2 = L4_2.UI
+  L4_2 = L4_2.Button
+  L5_2 = "Contents/ShortCutWheelPanel/BtnPanel/BtnReset"
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  A0_2.btn_reset = L2_2
+  L3_2 = A0_2
+  L2_2 = A0_2._safe_get_cmpt
+  L4_2 = CS
+  L4_2 = L4_2.UnityEngine
+  L4_2 = L4_2.UI
+  L4_2 = L4_2.Button
+  L5_2 = "Contents/ShortCutWheelPanel/BtnPanel/BtnSave"
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  A0_2.btn_save = L2_2
+end
+L0_1._on_bind = L4_1
+function L4_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = L1_1.SafeGetCmpt
+  L2_2 = typeof
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L2_2 = L2_2(L3_2)
+  L3_2 = A0_2.tab_btn_root
+  L4_2 = "UnSelected/Icon"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.tab_btn_normal_img = L1_2
+  L1_2 = L1_1.SafeGetCmpt
+  L2_2 = typeof
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L2_2 = L2_2(L3_2)
+  L3_2 = A0_2.tab_btn_root
+  L4_2 = "Selected/Icon"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.tab_btn_selected_img = L1_2
+end
+L0_1._on_tab_btn_bind = L4_1
+return L0_1

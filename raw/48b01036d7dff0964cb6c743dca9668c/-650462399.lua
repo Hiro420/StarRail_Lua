@@ -1,0 +1,55 @@
+local L0_1, L1_1
+L0_1 = require
+L1_1 = "Framework.Class"
+L0_1(L1_1)
+L0_1 = G
+if not L0_1 then
+  L0_1 = {}
+end
+G = L0_1
+L0_1 = G
+L0_1.__reloading = false
+L0_1 = G
+L1_1 = {}
+L0_1.R = L1_1
+L0_1 = G
+L0_1.Proto = nil
+L0_1 = G
+L1_1 = {}
+L0_1.CS = L1_1
+L0_1 = G
+L0_1 = L0_1.CS
+L1_1 = CS
+L1_1 = L1_1.RPG
+L1_1 = L1_1.Client
+L1_1 = L1_1.NotifyManager
+L0_1.NotifyManager = L1_1
+L0_1 = G
+L0_1 = L0_1.CS
+L1_1 = CS
+L1_1 = L1_1.RPG
+L1_1 = L1_1.Client
+L1_1 = L1_1.GlobalVars
+L1_1 = L1_1.s_InControlInputModule
+L0_1.InControlInputModule = L1_1
+L0_1 = G
+L0_1 = L0_1.CS
+L1_1 = CS
+L1_1 = L1_1.RPG
+L1_1 = L1_1.Client
+L1_1 = L1_1.NotifyGroup
+L0_1.NotifyGroup = L1_1
+L0_1 = G
+L0_1 = L0_1.CS
+L1_1 = CS
+L1_1 = L1_1.RPG
+L1_1 = L1_1.Client
+L1_1 = L1_1.NotifyType
+L0_1.NotifyType = L1_1
+L0_1 = G
+L0_1 = L0_1.CS
+L1_1 = CS
+L1_1 = L1_1.UnityEngine
+L1_1 = L1_1.EventSystems
+L1_1 = L1_1.EventSystem
+L0_1.EventSystem = L1_1

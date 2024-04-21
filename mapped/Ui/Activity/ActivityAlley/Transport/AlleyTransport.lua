@@ -1,0 +1,576 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.StaticClass
+L1_1 = "AlleyTransport"
+L0_1 = L0_1(L1_1)
+L0_1.appoint_show_layer_by_mission = 1
+L0_1.try_show_layer_by_click = 0
+L0_1.cur_show_layer = 1
+L0_1.max_layer = 4
+L0_1.max_show_layer = 3
+L0_1.is_use_by_tutorial = false
+L0_1.normal_buff_id = 1001
+L0_1.max_layer_shop_id = 110
+L1_1 = {}
+L1_1[1] = "UIText_ActivityAlley_Airline_LowNew"
+L1_1[2] = "UIText_ActivityAlley_Airline_MediumNew"
+L1_1[3] = "UIText_ActivityAlley_Airline_High3New"
+L0_1.layer_to_show_name = L1_1
+L1_1 = {}
+L1_1.empty = "Empty"
+L1_1.reach = "Reach"
+L1_1.up = "Up"
+L0_1.score_progress_state = L1_1
+L0_1.invoke_after_frames = 5
+L1_1 = {}
+L2_1 = {}
+L2_1.posX = -1.888062
+L2_1.posY = 2.516785
+L2_1.posZ = 5
+L1_1[1] = L2_1
+L2_1 = {}
+L2_1.posX = -1.888062
+L2_1.posY = 2.516785
+L2_1.posZ = 5
+L1_1[2] = L2_1
+L2_1 = {}
+L2_1.posX = -1.545898
+L2_1.posY = 1.362396
+L2_1.posZ = 5
+L1_1[3] = L2_1
+L2_1 = {}
+L2_1.posX = -1.545898
+L2_1.posY = 1.362396
+L2_1.posZ = 5
+L1_1[4] = L2_1
+L2_1 = {}
+L2_1.posX = -2.944631
+L2_1.posY = 3.965409
+L2_1.posZ = 10
+L1_1[101] = L2_1
+L2_1 = {}
+L2_1.posX = 1.244995
+L2_1.posY = 2.169891
+L2_1.posZ = 10
+L1_1[102] = L2_1
+L2_1 = {}
+L2_1.posX = -3.43103
+L2_1.posY = 2.394257
+L2_1.posZ = 10
+L1_1[103] = L2_1
+L2_1 = {}
+L2_1.posX = 2.730774
+L2_1.posY = 3.926483
+L2_1.posZ = 10
+L1_1[104] = L2_1
+L2_1 = {}
+L2_1.posX = -6.389404
+L2_1.posY = 3.584015
+L2_1.posZ = 10
+L1_1[105] = L2_1
+L2_1 = {}
+L2_1.posX = -4.743408
+L2_1.posY = -2.997498
+L2_1.posZ = 10
+L1_1[106] = L2_1
+L2_1 = {}
+L2_1.posX = -2.406311
+L2_1.posY = 2.559021
+L2_1.posZ = 10
+L1_1[107] = L2_1
+L2_1 = {}
+L2_1.posX = -2.032227
+L2_1.posY = 4.466156
+L2_1.posZ = 10
+L1_1[108] = L2_1
+L2_1 = {}
+L2_1.posX = 1.820801
+L2_1.posY = -1.292664
+L2_1.posZ = 10
+L1_1[109] = L2_1
+L2_1 = {}
+L2_1.posX = 1.820801
+L2_1.posY = -1.292664
+L2_1.posZ = 10
+L1_1[110] = L2_1
+L2_1 = {}
+L2_1.posX = -1.888062
+L2_1.posY = 2.516785
+L2_1.posZ = 10
+L1_1[201] = L2_1
+L2_1 = {}
+L2_1.posX = -1.888062
+L2_1.posY = 2.516785
+L2_1.posZ = 10
+L1_1[202] = L2_1
+L2_1 = {}
+L2_1.posX = -1.545898
+L2_1.posY = 1.362396
+L2_1.posZ = 10
+L1_1[203] = L2_1
+L2_1 = {}
+L2_1.posX = -1.545898
+L2_1.posY = 1.362396
+L2_1.posZ = 10
+L1_1[204] = L2_1
+L2_1 = {}
+L2_1.posX = -4.373683
+L2_1.posY = 4.593785
+L2_1.posZ = 0
+L1_1[301] = L2_1
+L2_1 = {}
+L2_1.posX = -4.827037
+L2_1.posY = 9.069366
+L2_1.posZ = 30
+L1_1[302] = L2_1
+L2_1 = {}
+L2_1.posX = -1.032155
+L2_1.posY = 0.9129505
+L2_1.posZ = 30
+L1_1[303] = L2_1
+L2_1 = {}
+L2_1.posX = -2.580802
+L2_1.posY = 0.9129505
+L2_1.posZ = 30
+L1_1[304] = L2_1
+L2_1 = {}
+L2_1.posX = -4.560434
+L2_1.posY = 4.021473
+L2_1.posZ = 10
+L1_1[305] = L2_1
+L2_1 = {}
+L2_1.posX = 4.590492
+L2_1.posY = -2.909128
+L2_1.posZ = 30
+L1_1[321] = L2_1
+L2_1 = {}
+L2_1.posX = -0.8087121
+L2_1.posY = 0.6740384
+L2_1.posZ = 20
+L1_1[322] = L2_1
+L2_1 = {}
+L2_1.posX = -7.26558
+L2_1.posY = -1.976891
+L2_1.posZ = 30
+L1_1[323] = L2_1
+L2_1 = {}
+L2_1.posX = -1.200664
+L2_1.posY = -1.547202
+L2_1.posZ = 20
+L1_1[324] = L2_1
+L2_1 = {}
+L2_1.posX = -6.194093
+L2_1.posY = 5.646317
+L2_1.posZ = 20
+L1_1[325] = L2_1
+L2_1 = {}
+L2_1.posX = -6.194093
+L2_1.posY = 0.08016467
+L2_1.posZ = 25
+L1_1[326] = L2_1
+L2_1 = {}
+L2_1.posX = -3.314712
+L2_1.posY = 0.4408219
+L2_1.posZ = 30
+L1_1[327] = L2_1
+L2_1 = {}
+L2_1.posX = -3.652061
+L2_1.posY = 4.347888
+L2_1.posZ = 25
+L1_1[328] = L2_1
+L2_1 = {}
+L2_1.posX = -4.214108
+L2_1.posY = -2.31543
+L2_1.posZ = 25
+L1_1[341] = L2_1
+L2_1 = {}
+L2_1.posX = 4.231062
+L2_1.posY = 1.877121
+L2_1.posZ = 25
+L1_1[342] = L2_1
+L0_1.camera_setting_by_pc = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.posX = -3.782349
+L2_1.posY = 5.517147
+L2_1.posZ = 25
+L1_1[1] = L2_1
+L2_1 = {}
+L2_1.posX = -1.949219
+L2_1.posY = 5.517147
+L2_1.posZ = 25
+L1_1[2] = L2_1
+L2_1 = {}
+L2_1.posX = 1.64093
+L2_1.posY = 5.517147
+L2_1.posZ = 25
+L1_1[3] = L2_1
+L2_1 = {}
+L2_1.posX = 1.64093
+L2_1.posY = 5.517147
+L2_1.posZ = 25
+L1_1[4] = L2_1
+L2_1 = {}
+L2_1.posX = -2.55957
+L2_1.posY = 1.259064
+L2_1.posZ = 30
+L1_1[101] = L2_1
+L2_1 = {}
+L2_1.posX = 4.060852
+L2_1.posY = -2.336334
+L2_1.posZ = 30
+L1_1[102] = L2_1
+L2_1 = {}
+L2_1.posX = -4.119141
+L2_1.posY = -1.318176
+L2_1.posZ = 30
+L1_1[103] = L2_1
+L2_1 = {}
+L2_1.posX = 4.442322
+L2_1.posY = 1.757568
+L2_1.posZ = 30
+L1_1[104] = L2_1
+L2_1 = {}
+L2_1.posX = -7.939575
+L2_1.posY = 0.3926697
+L2_1.posZ = 30
+L1_1[105] = L2_1
+L2_1 = {}
+L2_1.posX = -6.779907
+L2_1.posY = -5.870941
+L2_1.posZ = 30
+L1_1[106] = L2_1
+L2_1 = {}
+L2_1.posX = -5.765808
+L2_1.posY = -0.1033936
+L2_1.posZ = 30
+L1_1[107] = L2_1
+L2_1 = {}
+L2_1.posX = -2.096191
+L2_1.posY = 3.482819
+L2_1.posZ = 30
+L1_1[108] = L2_1
+L2_1 = {}
+L2_1.posX = 1.607117
+L2_1.posY = -3.921326
+L2_1.posZ = 30
+L1_1[109] = L2_1
+L2_1 = {}
+L2_1.posX = 8.294739
+L2_1.posY = 1.971066
+L2_1.posZ = 30
+L1_1[110] = L2_1
+L2_1 = {}
+L2_1.posX = -3.782349
+L2_1.posY = 5.517147
+L2_1.posZ = 30
+L1_1[201] = L2_1
+L2_1 = {}
+L2_1.posX = -1.949219
+L2_1.posY = 5.517147
+L2_1.posZ = 30
+L1_1[202] = L2_1
+L2_1 = {}
+L2_1.posX = 1.64093
+L2_1.posY = 5.517147
+L2_1.posZ = 30
+L1_1[203] = L2_1
+L2_1 = {}
+L2_1.posX = 1.64093
+L2_1.posY = 5.517147
+L2_1.posZ = 30
+L1_1[204] = L2_1
+L2_1 = {}
+L2_1.posX = -3.854418
+L2_1.posY = 4.29124
+L2_1.posZ = 20
+L1_1[301] = L2_1
+L2_1 = {}
+L2_1.posX = -4.827037
+L2_1.posY = 9.069366
+L2_1.posZ = 30
+L1_1[302] = L2_1
+L2_1 = {}
+L2_1.posX = -0.0300325
+L2_1.posY = 0.3769162
+L2_1.posZ = 30
+L1_1[303] = L2_1
+L2_1 = {}
+L2_1.posX = -2.708891
+L2_1.posY = 0.8574371
+L2_1.posZ = 30
+L1_1[304] = L2_1
+L2_1 = {}
+L2_1.posX = -3.105745
+L2_1.posY = 4.86272
+L2_1.posZ = 25
+L1_1[305] = L2_1
+L2_1 = {}
+L2_1.posX = 4.590492
+L2_1.posY = -2.909128
+L2_1.posZ = 30
+L1_1[321] = L2_1
+L2_1 = {}
+L2_1.posX = -0.8087121
+L2_1.posY = 0.6740384
+L2_1.posZ = 20
+L1_1[322] = L2_1
+L2_1 = {}
+L2_1.posX = -7.26558
+L2_1.posY = -1.976891
+L2_1.posZ = 30
+L1_1[323] = L2_1
+L2_1 = {}
+L2_1.posX = -1.786074
+L2_1.posY = -0.412086
+L2_1.posZ = 20
+L1_1[324] = L2_1
+L2_1 = {}
+L2_1.posX = -6.194093
+L2_1.posY = 5.646317
+L2_1.posZ = 20
+L1_1[325] = L2_1
+L2_1 = {}
+L2_1.posX = -6.194093
+L2_1.posY = 0.08016467
+L2_1.posZ = 25
+L1_1[326] = L2_1
+L2_1 = {}
+L2_1.posX = -3.314712
+L2_1.posY = 0.4408219
+L2_1.posZ = 30
+L1_1[327] = L2_1
+L2_1 = {}
+L2_1.posX = -3.652061
+L2_1.posY = 4.347888
+L2_1.posZ = 25
+L1_1[328] = L2_1
+L2_1 = {}
+L2_1.posX = -4.214108
+L2_1.posY = -2.31543
+L2_1.posZ = 25
+L1_1[341] = L2_1
+L2_1 = {}
+L2_1.posX = 4.231062
+L2_1.posY = 1.877121
+L2_1.posZ = 25
+L1_1[342] = L2_1
+L0_1.camera_setting_by_mobile = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = L0_1.camera_setting_by_mobile
+  L1_2 = L1_2[A0_2]
+  L2_2 = G
+  L2_2 = L2_2.Utils
+  L2_2 = L2_2.is_pc_or_ps_or_mobile_gamepad_mode
+  L2_2 = L2_2()
+  if L2_2 then
+    L2_2 = L0_1.camera_setting_by_pc
+    L1_2 = L2_2[A0_2]
+  end
+  return L1_2
+end
+L0_1.get_camera_setting = L1_1
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = CS
+  L1_2 = L1_2.RPG
+  L1_2 = L1_2.GameCore
+  L1_2 = L1_2.AlleyPackGoodsTypeEnum
+  L1_2 = L1_2.Small
+  if A0_2 == L1_2 then
+    L1_2 = "SpriteOutput/Quest/Alley/AlleyCargoTypeIcon/AlleyCargoTypeIconS.png"
+    return L1_2
+  end
+  L1_2 = CS
+  L1_2 = L1_2.RPG
+  L1_2 = L1_2.GameCore
+  L1_2 = L1_2.AlleyPackGoodsTypeEnum
+  L1_2 = L1_2.Medium
+  if A0_2 == L1_2 then
+    L1_2 = "SpriteOutput/Quest/Alley/AlleyCargoTypeIcon/AlleyCargoTypeIconM.png"
+    return L1_2
+  end
+  L1_2 = CS
+  L1_2 = L1_2.RPG
+  L1_2 = L1_2.GameCore
+  L1_2 = L1_2.AlleyPackGoodsTypeEnum
+  L1_2 = L1_2.Large
+  if A0_2 == L1_2 then
+    L1_2 = "SpriteOutput/Quest/Alley/AlleyCargoTypeIcon/AlleyCargoTypeIconL.png"
+    return L1_2
+  end
+end
+L0_1.get_type_icon_path = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
+  L3_2 = nil
+  L4_2 = nil
+  L5_2 = false
+  L6_2 = #A1_2
+  if 0 < L6_2 then
+    L6_2 = ipairs
+    L7_2 = A1_2
+    L6_2, L7_2, L8_2 = L6_2(L7_2)
+    for L9_2, L10_2 in L6_2, L7_2, L8_2 do
+      L11_2 = L10_2.icon_game_object
+      L12_2 = L11_2.transform
+      L12_2 = L12_2.position
+      L13_2 = CS
+      L13_2 = L13_2.RPG
+      L13_2 = L13_2.Client
+      L13_2 = L13_2.GlobalVars
+      L13_2 = L13_2.s_UI3DCamera
+      L14_2 = L13_2
+      L13_2 = L13_2.WorldToScreenPoint
+      L15_2 = L12_2
+      L13_2 = L13_2(L14_2, L15_2)
+      L14_2 = CS
+      L14_2 = L14_2.UnityEngine
+      L14_2 = L14_2.Vector2
+      L15_2 = L13_2.x
+      L16_2 = L13_2.y
+      L14_2 = L14_2(L15_2, L16_2)
+      L15_2 = A0_2.localPosition
+      L15_2 = L15_2.x
+      L16_2 = CS
+      L16_2 = L16_2.RPG
+      L16_2 = L16_2.Client
+      L16_2 = L16_2.UIUtils
+      L16_2 = L16_2.UIScaleFactor
+      L15_2 = L15_2 * L16_2
+      L16_2 = CS
+      L16_2 = L16_2.UnityEngine
+      L16_2 = L16_2.Screen
+      L16_2 = L16_2.width
+      L16_2 = L16_2 / 2
+      L15_2 = L15_2 + L16_2
+      L16_2 = A0_2.localPosition
+      L16_2 = L16_2.y
+      L17_2 = CS
+      L17_2 = L17_2.RPG
+      L17_2 = L17_2.Client
+      L17_2 = L17_2.UIUtils
+      L17_2 = L17_2.UIScaleFactor
+      L16_2 = L16_2 * L17_2
+      L17_2 = CS
+      L17_2 = L17_2.UnityEngine
+      L17_2 = L17_2.Screen
+      L17_2 = L17_2.height
+      L17_2 = L17_2 / 2
+      L16_2 = L16_2 + L17_2
+      L17_2 = CS
+      L17_2 = L17_2.UnityEngine
+      L17_2 = L17_2.Vector2
+      L18_2 = L15_2
+      L19_2 = L16_2
+      L17_2 = L17_2(L18_2, L19_2)
+      L18_2 = L14_2 - L17_2
+      L18_2 = L18_2.magnitude
+      if A2_2 > L18_2 then
+        L3_2 = L11_2.gameObject
+        L4_2 = L14_2
+        L5_2 = L10_2.is_end_point
+      end
+    end
+  end
+  L6_2 = L3_2
+  L7_2 = L4_2
+  L8_2 = L5_2
+  return L6_2, L7_2, L8_2
+end
+L0_1.get_nearest_alley_map_icon_node_by_cursor = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = CS
+  L1_2 = L1_2.RPG
+  L1_2 = L1_2.Client
+  L1_2 = L1_2.GlobalVars
+  L1_2 = L1_2.s_ModuleManager
+  L1_2 = L1_2.AlleyModule
+  L2_2 = L1_2
+  L1_2 = L1_2.GetLineTriggerByShopID
+  L3_2 = A0_2
+  return L1_2(L2_2, L3_2)
+end
+L0_1.get_trigger_name_by_shop_id = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = L0_1.get_buff_item_color_trigger
+  L3_2 = A1_2
+  L2_2 = L2_2(L3_2)
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.GameCore
+  L3_2 = L3_2.AlleyMapEffectExcelTable
+  L3_2 = L3_2.GetData
+  L4_2 = A1_2
+  L3_2 = L3_2(L4_2)
+  L4_2 = L3_2.BuffOrDebuff
+  L5_2 = CS
+  L5_2 = L5_2.RPG
+  L5_2 = L5_2.GameCore
+  L5_2 = L5_2.BuffType
+  L5_2 = L5_2.Buff
+  if L4_2 ~= L5_2 then
+    L4_2 = L3_2.BuffOrDebuff
+    L5_2 = CS
+    L5_2 = L5_2.RPG
+    L5_2 = L5_2.GameCore
+    L5_2 = L5_2.BuffType
+    L5_2 = L5_2.DeBuff
+    if L4_2 ~= L5_2 then
+      goto lbl_37
+    end
+  end
+  L4_2 = L0_1.normal_buff_id
+  if A1_2 ~= L4_2 then
+    L5_2 = A0_2
+    L4_2 = A0_2.SetBool
+    L6_2 = "IsRareBuff"
+    L7_2 = true
+    L4_2(L5_2, L6_2, L7_2)
+  end
+  L5_2 = A0_2
+  L4_2 = A0_2.SetTrigger
+  L6_2 = L2_2
+  L4_2(L5_2, L6_2)
+  ::lbl_37::
+end
+L0_1.set_buff_item_color_trigger = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = CS
+  L1_2 = L1_2.RPG
+  L1_2 = L1_2.GameCore
+  L1_2 = L1_2.AlleyMapEffectExcelTable
+  L1_2 = L1_2.GetData
+  L2_2 = A0_2
+  L1_2 = L1_2(L2_2)
+  L2_2 = L1_2.BuffOrDebuff
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.GameCore
+  L3_2 = L3_2.BuffType
+  L3_2 = L3_2.Buff
+  if L2_2 == L3_2 then
+    L2_2 = "ColorBuff"
+    return L2_2
+  else
+    L2_2 = L1_2.BuffOrDebuff
+    L3_2 = CS
+    L3_2 = L3_2.RPG
+    L3_2 = L3_2.GameCore
+    L3_2 = L3_2.BuffType
+    L3_2 = L3_2.DeBuff
+    if L2_2 == L3_2 then
+      L2_2 = "ColorDebuff"
+      return L2_2
+    else
+      L2_2 = "ColorDefault"
+      return L2_2
+    end
+  end
+end
+L0_1.get_buff_item_color_trigger = L1_1
+return L0_1

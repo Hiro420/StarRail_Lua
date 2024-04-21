@@ -1,0 +1,160 @@
+local L0_1, L1_1, L2_1
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "MiniGameProgrammingPanelBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Maze/MiniGame/MiniGameProgrammingPanel.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.RectTransform
+  L4_2 = "LeftPanel"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.AnimatorButton
+  L4_2 = "LeftPanel/BtnPanel/BtnDirectionUp"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_up = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.AnimatorButton
+  L4_2 = "LeftPanel/BtnPanel/BtnDirectionRight"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_right = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.AnimatorButton
+  L4_2 = "LeftPanel/BtnPanel/BtnDirectionLeft"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_left = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.AnimatorButton
+  L4_2 = "LeftPanel/BtnPanel/BtnDirectionDown"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_down = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.NodeListView
+  L4_2 = G
+  L4_2 = L4_2.NodeListViewBinder
+  L5_2 = "RightPanel/Root/Contents/CommandList"
+  L6_2 = "Ui.MazeMiniGame.MiniGamePanel.MiniGameProgramming.MiniGameProgrammingCommandNodePanel"
+  L7_2 = "Ui.MazeMiniGame.MiniGamePanel.MiniGameProgramming.MiniGameProgrammingCommandNodePanelBinder"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  A0_2.command_list = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animation
+  L4_2 = "RightPanel/Root"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.right_panel_animation = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._init_transform
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.AnimatorButton
+  L4_2 = "RightPanel/Root/BtnPanel/BtnStart"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_start = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._init_transform
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.AnimatorButton
+  L4_2 = "RightPanel/Root/BtnPanel/BtnClear"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_clear = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._init_transform
+  L3_2 = CS
+  L3_2 = L3_2.RPG
+  L3_2 = L3_2.Client
+  L3_2 = L3_2.AnimatorButton
+  L4_2 = "RightPanel/Root/BtnPanel/BtnStop"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_stop = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "RightPanel/Root/TitlePanel/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.state_title = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animation
+  L4_2 = "RightPanel/Root/BtnPanel/PopUpTip"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.popup_tip_animation = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._init_transform
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.RectTransform
+  L4_2 = "RightPanel/Root/BtnPanel/PopUpTip"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.popup_tip = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "RightPanel/Root/BtnPanel/PopUpTip/Content/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.popup_tip_text = L1_2
+end
+L0_1._on_bind = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  L4_2 = A0_2
+  L3_2 = A0_2._safe_get_cmpt
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2 = L3_2(L4_2, L5_2, L6_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SafeSetActive
+  L6_2 = true
+  L4_2(L5_2, L6_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SafeSetLightWeightActive
+  L6_2 = false
+  L4_2(L5_2, L6_2)
+  return L3_2
+end
+L0_1._init_transform = L1_1
+return L0_1
