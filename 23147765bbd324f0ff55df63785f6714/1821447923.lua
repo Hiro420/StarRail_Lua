@@ -1,0 +1,227 @@
+local L0_1, L1_1, L2_1
+L0_1 = require
+L1_1 = "Ui.Common.CommonRefreshBtnPanel"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Ui.Common.CommonRefreshBtnPanelBinder"
+L0_1(L1_1)
+L0_1 = G
+L0_1 = L0_1.Class
+L1_1 = "FriendMainPageBinder"
+L2_1 = G
+L2_1 = L2_1.UIBinder
+L0_1 = L0_1(L1_1, L2_1)
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = "UI/Friend/FriendMainPage.prefab"
+  return L1_2
+end
+L0_1.get_prefab_path = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PageInfo/TitleType/Text"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_sub_title = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/BottomList/FriendNum/Time/NumNow"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_friend_cur_num = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Text
+  L4_2 = "Root/PanelContent/BottomList/FriendNum/Time/NumTotal"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.text_friend_max_num = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/BtnClose"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_close = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TopList/BtnBlacklist"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_black_list = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TopList/BtnFriendApplication"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_application = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TopLeftList/BtnSwitch"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_switch = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "Root/TopLeftList/BtnSwitch/IconPanel/LeftContent/IconWhite"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.img_icon_white = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Image
+  L4_2 = "Root/TopLeftList/BtnSwitch/IconPanel/LeftContent/IconBlack"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.img_icon_black = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.Animator
+  L4_2 = "Root/TopLeftList/BtnSwitch"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.anim_btn_switch = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.BtnFilterSortSelectPanel
+  L4_2 = G
+  L4_2 = L4_2.BtnFilterSortSelectPanelBinder
+  L5_2 = "Root/TopLeftList/OrderPanel"
+  L6_2 = {}
+  L7_2 = FilterSortSelectEnum
+  L7_2 = L7_2.CommonSort
+  L6_2[1] = L7_2
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2, L6_2)
+  A0_2.filter_sort_select_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._create_panel
+  L3_2 = G
+  L3_2 = L3_2.CommonRefreshBtnPanel
+  L4_2 = G
+  L4_2 = L4_2.CommonRefreshBtnPanelBinder
+  L5_2 = "Root/TopList/BtnChange"
+  L1_2 = L1_2(L2_2, L3_2, L4_2, L5_2)
+  A0_2.panel_refresh_btn = L1_2
+  L1_2 = A0_2.filter_sort_select_panel
+  L2_2 = L1_2
+  L1_2 = L1_2.get_panel_by_enum
+  L3_2 = FilterSortSelectEnum
+  L3_2 = L3_2.CommonSort
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.panel_sort = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/MyFriendPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_friend_list_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/FriendAddPanel"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_friend_add_panel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/BottomList/FriendNum"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_friend_num = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/TopList/BtnFriendApplication/RedDot"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_apply_reddot = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/TopLeftList/PSNTip"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_psn_tips = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/LoadingWheelContainer"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_loading_wheel = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/PanelContent/LoadingWheelContainer/LoadingWheel/Title"
+  L1_2 = L1_2(L2_2, L3_2)
+  L2_2 = L1_2
+  L1_2 = L1_2.SafeSetActive
+  L3_2 = false
+  L1_2(L2_2, L3_2)
+  L1_2 = A0_2.node_psn_tips
+  L2_2 = L1_2
+  L1_2 = L1_2.SafeSetActive
+  L3_2 = false
+  L1_2(L2_2, L3_2)
+end
+L0_1._common_bind = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L2_2 = A0_2
+  L1_2 = A0_2._common_bind
+  L1_2(L2_2)
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/LeftTabArea/ScrollView/Viewport/TabControl"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_tab_control = L1_2
+end
+L0_1._on_bind = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2._common_bind
+  L1_2(L2_2)
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_find
+  L3_2 = "Root/TopTabArea/ScrollView/Viewport/Content/TabControl"
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2.node_tab_control = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TopTabArea/KeyMapInfo/Root/CopyLayout/Left/GamepadBtn"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_select_left = L1_2
+  L2_2 = A0_2
+  L1_2 = A0_2._safe_get_cmpt
+  L3_2 = CS
+  L3_2 = L3_2.UnityEngine
+  L3_2 = L3_2.UI
+  L3_2 = L3_2.Button
+  L4_2 = "Root/TopTabArea/KeyMapInfo/Root/CopyLayout/Right/GamepadBtn"
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  A0_2.btn_select_right = L1_2
+end
+L0_1._on_pc_bind = L1_1
+return L0_1
